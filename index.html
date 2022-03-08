@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PLTW PROJECT</title>
+<link rel="stylesheet" href="style.css">
+<style>
+</style>
+
+<script>
+
+var setname = "name"
+
+function namefunction(name){
+   var setname = document.getElementById("nameentry").value
+   document.getElementById("name").innerHTML = "Your name is: " + setname ;
+ }
+
+
+    function myFunction() {
+    
+      document.getElementById("demo").innerHTML = "Text changed.";
+    }
+</script>
+
+</head>
+
+<body >
+
+<img src="PLTW.png" alt="Logo" style="width:100%">
+
+<div class="w3-container w3-black">
+                   <h1>This is a Heading</h1>
+                   <p>This is a paragraph.</p>
+                   <p>This is another paragraph.</p>
+</div>
+
+<div>
+
+<button type="button" onclick="myFunction();">Change Text</button>
+<p id="demo">Some text.</p>
+
+<!-- Page break with a text box and button that sets a variable equal to the entry -->
+<br></br>
+<input type="text" name="firstname" id = "nameentry"> 
+<button type="button" onclick="namefunction(nameentry);">Set Name</button>
+
+<p id="name">Some text.</p>
+
+
+
+
+
+
+</div>
+    
+
+</body>
+</html>
